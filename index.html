@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery Slider Plugin Demo - By Mahavir Nahata</title>
+<link rel="stylesheet" type="text/css" href="slider-mn.css">
+<!-- Include Jquery Here -->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- Include Slider JS File Here, Always Place It Below JQuery Inclusion File-->
+<script src="slider-mn-min.js"></script>
+</head>
+<body>
+<center><h1>jQuery Slider Plugin : By Mahavir Nahata</h1></center>
+
+<div id="sliderDemo" style="width:100%; margin:0 auto;float:left">
+
+<!-- Slider Main div Starts Here, Everything Including Slider Images And Description Text Must Be Placed Inside This Div -->
+<div class="slider" style="overflow:hidden;position:relative;margin:0 auto;">
+<!-- Slide Wrapper Starts Here, It Represents a Single Image And Its Corresponding Description Text -->
+<div  class="slider_wrapper">
+<!-- Replace src attribute path with your slider image path -->
+<img src="http://mahavirnahata.com/slider-mn/img/banner1.png" class="slider_image"/>
+<!-- Replace Slider Description with your Description -->
+<span class="slider_desc" style="display:block"><a href="http://www.offersDay.in" target="_blank">http://OffersDay.in</a></span>
+</div>
+<!-- Slide Wrapper Ends Here -->
+<div  class="slider_wrapper">
+<img src="http://mahavirnahata.com/slider-mn/img/banner2.png"  class="slider_image"/>
+<span class="slider_desc"><a href="http://www.plzSmile.com" target="_blank">http://plzSmile.com</a></span>
+</div>
+<div  class="slider_wrapper">
+<img src="http://mahavirnahata.com/slider-mn/img/banner3.png" class="slider_image"/>
+<span class="slider_desc"><a href="http://www.readbestquotes.com" target="_blank">http://readbestquotes.com</a></span>
+</div>
+<div  class="slider_wrapper">
+<img src="http://mahavirnahata.com/slider-mn/img/banner4.png" class="slider_image"/>
+<span class="slider_desc"><a href="http://www.plzSmile.com" target="_blank">http://plzSmile.com</a></span>
+</div>
+</div>
+<!-- Slider Ends Here -->
+
+</div>
+<br /><br />
+<h2>Instructions : </h2>
+<ol>
+<li>HTML Instructions :</li>
+    <ol>
+    <li>Download the source code and read the index.html file, everything is mentioned there in comments.</li>
+	</ol>
+<li>Plugin js Instructions</li>
+	<ol>
+    <li>
+    You can configure these three things : 
+    <ol>
+        <li>1. Slide Duration : Number : Amount of time in milisecond for a slide to move from right to left : Default : 5000</li>
+        <li>2. nextSlideDuration : Number : Amount of time in milisecond after which next slide will start : Default : 3000</li>
+        <li>3. showDescriptionText : Boolean : Control Whether to display Description text or not. : Default : true</li>
+    </ol></li>
+    <li>
+    Put this code in jQuery document.ready function to activate slider : <br /><br />
+	<strong>$(".slider").sliderMn({slideDuration:5000,nextSlideDuration:1000,showDescriptionText:true});</strong><br /><br />
+    Change configuration values as per your need
+    </li>
+    <li>You can change configurable values of slider later as per your need by invoking these functions : 
+    	<ol>
+        <li>Later You can Change sliderDuration By Calling This Function.<br /><strong> $.sliderMn({slideDuration:7000});</strong> </li><br />
+        <li>You can also change nextSlideDuration Similarly. <br /><strong> $.sliderMn({slideDuration:5000});</strong></li><br />
+  		<li>Likewise You can also turn on/off Description text at later time by using below code. <br /><strong> $.sliderMn({showDescriptionText:false});</strong></li>
+     </li>
+   </ol>
+    
+  </li>
+ </ol>
+</ol>
+
+<br /><br />
+<h2><a href="http://mahavirnahata.com/slider-mn.zip">Download Source Code From Here</a></h2>
+
+<br />
+<h2><a href="http://mahavirnahata.com/#contact" target="_blank">For any Query click here</a></h2>
+</body>
+<script>
+/*To Enable Slider Include This Line At the bottom of page*/
+/*
+You can configure three things : 
+1. Slide Duration : Number : Amount of time in milisecond for a slide to move from right to left : Default : 5000
+2. nextSlideDuration : Number : Amount of time in milisecond after which next slide will start : Default : 3000
+3. showDescriptionText : Boolean : Control Whether to display Description text or not. : Default : true
+*/
+//jQuery document.ready Starts here, Slider initialization code must exists in jQuery document.ready function
+$(function(){
+$(".slider").sliderMn({slideDuration:5000,nextSlideDuration:1000,showDescriptionText:true});
+/*Later You can Change sliderDuration By Calling This Function. Uncomment the below code to see changes*/
+//$.sliderMn({slideDuration:7000}); 
+/*You can also change nextSlideDuration Similarly. Uncomment the below code to see changes*/
+//$.sliderMn({slideDuration:5000});
+/*Likewise You can also turn on/off Description text at later time by using below code. Uncomment the below code to see changes*/
+//$.sliderMn({showDescriptionText:false});
+});
+//jQuery document.ready ends here
+</script>
+</html>
