@@ -1,0 +1,29 @@
+{
+    "name": "sliderMn",
+    "title": "jQuery Slider Plugin",
+    "description": "jQuery Slider Plugin",
+    "keywords": [
+        "slider",
+        "image-slider",
+        "image-text-slider"
+    ],
+    "version": "1.1.1",
+    "author": {
+        "name": "Mahavir Nahata",
+        "url": "http://mahavirnahata.com"
+    },
+    "maintainers": [
+        {
+            "name": "Mahavir Nahata",
+            "email": "mahavirnahata@gmail.com",
+            "url": "http://mahavirnahata.com"
+        }
+    ],
+    "licenses": [{"type": "MIT","url":"http://mahavirnahata.com/mit.html"}],
+    "bugs": "http://github.com/mahavirnahata/sliderMn/issues",
+    "homepage": "http://mahavirnahata.com/slider-mn/",
+    "docs": "https://github.com/mahavirnahata/sliderMn/blob/master/README.md",
+    "dependencies": {
+        "jquery": ">=1.10"
+    }
+}
