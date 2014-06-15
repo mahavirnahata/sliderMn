@@ -1,0 +1,28 @@
+/*A jQuery Slider Plugin By Mahavir Nahata, Website : http://www.mahavirnahata.com */
+/*Define Slider Height And Width*/
+.slider , .slider_wrapper , .slider_image
+{
+height:300px;
+width:300px;
+background-color:#FFFFFF;
+}
+/*Define Slider Description Text Css Style Sheet*/
+.slider_desc
+{
+width:95%;
+background-color:#333333;
+color:#fff;
+text-align:center;
+font-size:14px;
+display:none;
+position:absolute;
+bottom:0px;
+border:1px solid #ccc;
+border-radius:5px;
+padding:5px;
+}
+.slider_desc a
+{
+color:#fff;
+text-decoration:none;
+}
